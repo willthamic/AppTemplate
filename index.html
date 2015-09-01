@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<title>Super Useful App</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+		<script type="text/javascript">
+		setInterval(function(){
+			if (window.pageYOffset < 850) {
+				console.log("image1");
+			} else if (window.pageYOffset > 850) { 
+				console.log("image2");
+			}
+			console.log(window.pageYOffset);
+		}, 1);
+    	$(document).ready(function() {
+			$("body").css("display", "none");
+
+			$("body").fadeIn(3000);
+
+			$("a.transition").click(function(event){
+				$("html").css("background-color", "#FFFFFF");
+				event.preventDefault();
+				linkLocation = this.href;
+				$("body").fadeOut(1000, redirectPage);
+				console.log("linked");
+		});});
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<img class="logo" src="logo.png">
+			<h1>SUPER USEFUL APP</h1>
+		</div>
+		<div class="body">
+			<div class="description">
+				<h2 class="body-header">IT DOES WHAT YOU NEED IT TO DO</h2>
+				<p class="body-text">
+					This app is one of the best apps on the market. It does exactly what you have always wanted an app to do. And it works perfectly! How could you have lived without this app all this time? It's really the solution to all of your problems. Here's a list of the many things it can do:
+				</p>
+				<ol class="body-text">
+					<li>It can do this!</li>
+					<li>And this!</li>
+					<li>And if you want it to, it can do this too!</li>
+					<li>It does all of these things!</li>
+				</ol>
+				<p class="body-text">
+					I sure am running out of things to say. I have to fill this entire area for the page to move down to allow scrolling and things. It would look weird with a large blank spot.
+				</p>
+				<ul class="body-text">
+					<li>That's</li>
+					<li>Why</li>
+					<li>I</li>
+					<li>Am</li>
+					<li>Making</li>
+					<li>These</li>
+					<li>Useless</li>
+					<li>Lists</li>
+				</ul>
+				<p class="body-text">
+					I am so happy that lists take up that much space. It certainly is convenient. However, I still need a few more lines. So I'll use a table. Those take up lots of room.
+				</p>
+				<table>
+					<tr>
+						<td></td>
+						<td>Our App</td>
+						<td>Competition</td>
+					</tr>
+					<tr>
+						<td>Efficiency</td>
+						<td><span class="glyphicon glyphicon-ok"></span></td>
+						<td><span class="glyphicon glyphicon-remove"></span></td>
+					</tr>
+					<tr>
+						<td>Quality</td>
+						<td><span class="glyphicon glyphicon-ok"></span></td>
+						<td><span class="glyphicon glyphicon-remove"></span></td>
+					</tr>
+					<tr>
+						<td>Multi-Threading</td>
+						<td><span class="glyphicon glyphicon-ok"></span></td>
+						<td><span class="glyphicon glyphicon-remove"></span></td>
+					</tr>
+					<tr>
+						<td>Synergy</td>
+						<td><span class="glyphicon glyphicon-ok"></span></td>
+						<td><span class="glyphicon glyphicon-remove"></span></td>
+					</tr>
+				</table>
+				<h2 class="body-header">CUSTOMIZATION</h2>
+				<p class="body-text">
+					You can change so many things about this app. This customization allows it to fit your personal needs.
+				</p>
+				<ul class="body-text">
+					<li>Red</li>
+					<li>Orange</li>
+					<li>Yellow</li>
+					<li>Green</li>
+					<li>Blue</li>
+					<li>Indigo</li>
+					<li>Violet</li>
+				</ul>
+				<p class="body-text">
+					These colors are just 7 of the 16777216 different colors you can set it to. And colors aren't just the only things you can change. You can also set fonts for the app. My 5 personal favorites are:
+				</p>
+				<ol class="body-text">
+					<li>Arial</li>
+					<li>Times New Roman</li>
+					<li>Roboto</li>
+					<li>Lato</li>
+					<li>Helvetica</li>
+				</ol>
+			</div>
+			<div class="phone-container">
+				<img class="phone" src="phone.png" style="position: relative; top: 0; left: 0;" width="300px"/>
+				<img class="phone" src="http://placehold.it/203x360" style="position: absolute; top: 90px; left: 48px;"/>
+			</div>
+		</div>
+		<div class="footer">
+			
+		</div>
+	</body>
+</html>
